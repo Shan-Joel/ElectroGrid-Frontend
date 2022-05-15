@@ -46,7 +46,12 @@ public class Model {
 			output = "Error while inserting the Details";
 			System.err.println(e.getMessage());
 		}
+		
+		String newFaq = readService(); 
+		output = "{\"status\":\"success\",\"data\":\""+newFaq+"\"}"; 
+		
 		return output;
+
 	}
 
 	public String readService() {
@@ -86,7 +91,12 @@ public class Model {
 			output = "Error while reading the Details";
 			System.err.println(e.getMessage());
 		}
+		
+		String newFaq = readService(); 
+		output = "{\"status\":\"success\",\"data\":\""+newFaq+"\"}"; 
+		
 		return output;
+
 	}
 
 	public String updateService(String id, String question, String answer, String date) {
@@ -112,7 +122,12 @@ public class Model {
 			output = "Error while updating the details";
 			System.err.println(e.getMessage());
 		}
+		
+		String newFaq = readService(); 
+		output = "{\"status\":\"success\",\"data\":\""+newFaq+"\"}"; 
+		
 		return output;
+
 	}
 
 	public String deleteService(String id) {
@@ -135,7 +150,12 @@ public class Model {
 			output = "Error while deleting the details";
 			System.err.println(e.getMessage());
 		}
+		
+		String newFaq = readService(); 
+		output = "{\"status\":\"success\",\"data\":\""+newFaq+"\"}"; 
+		
 		return output;
+
 	}
 
 }
